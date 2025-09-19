@@ -30,7 +30,7 @@ int main(void) {
         if (i) putchar(' ');
         printf("%d", a[i]);
     }
-    putchar('');
+    putchar('\n');
 
     free(a);
     return 0;
@@ -51,7 +51,7 @@ void max_heapify(int a[], int n, int i) {
         largest = right;
     }
 
-    if (largest =! i) {
+    if (largest != i) {
         int temp = a[i];
         a[i] = a[largest];
         a[largest] = temp;
